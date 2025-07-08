@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+    margin: 5px;
+}
+h3{
+    text-align: center;
+    margin: 5px;
+}
+.b1{
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 0 5px 5px 0;
+}
+.box{
+    display:flex ;
+    justify-content: center;
+    margin: 50px;
+}
+.red{
+    background-color: rgb(255, 0, 0);
+}
+.green{
+    background-color: rgb(0, 255, 38);
+}
+.blue{
+    background-color: rgb(49, 87, 255);
+}
+.yellow{
+    background-color: rgb(255, 242, 0);
+}
+
+
+.flash {
+    background-color: rgb(255, 255, 255);
+}
+.userflash{
+    background-color: rgb(156, 233, 156);
+}
+
+h2{
+    text-align: center;
+}
