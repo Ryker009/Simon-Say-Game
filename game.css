@@ -1,51 +1,86 @@
-*{
+/* Basic Setup */
+body {
     margin: 0;
-    padding: 0;
-}
-body{
-    background-color: white;
-}
-h1{
-    text-align: center;
-    margin: 5px;
-}
-h3{
-    text-align: center;
-    margin: 5px;
-}
-.b1{
-    border: 5px solid black;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    margin: 0 5px 5px 0;
-}
-.box{
-    display:flex ;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c3e50; /* Darker background */
+    color: #ecf0f1;
+    display: flex;
     justify-content: center;
-    margin: 50px;
-}
-.red{
-    background-color: rgb(255, 0, 0);
-}
-.green{
-    background-color: rgb(0, 255, 38);
-}
-.blue{
-    background-color: rgb(49, 87, 255);
-}
-.yellow{
-    background-color: rgb(255, 242, 0);
+    align-items: center;
+    min-height: 100vh;
 }
 
-
-.flash {
-    background-color: rgb(255, 255, 255);
-}
-.userflash{
-    background-color: rgb(156, 233, 156);
-}
-
-h2{
+/* Main Game Container */
+.game-container {
     text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#level-title {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    min-height: 2.2rem; /* Prevent layout shift */
+}
+
+/* Pulsing animation for the start text */
+.pulsate {
+    animation: pulsate-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes pulsate-animation {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+
+/* The Simon Board */
+.simon-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 320px; /* Responsive size */
+    height: 320px;
+    margin: 20px auto;
+}
+
+.simon-btn {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.1s;
+    cursor: pointer;
+}
+
+.simon-btn:hover {
+    opacity: 0.8;
+}
+
+.simon-btn:active {
+    transform: scale(0.95); /* Click effect */
+}
+
+/* Button Colors */
+.red { background-color: #c0392b; border-radius: 100% 10px 10px 10px; }
+.green { background-color: #27ae60; border-radius: 10px 100% 10px 10px; }
+.yellow { background-color: #f1c40f; border-radius: 10px 10px 10px 100%; }
+.blue { background-color: #2980b9; border-radius: 10px 10px 100% 10px; }
+
+
+/* Flash effect for computer and user */
+.flash {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px white;
+}
+
+/* Game Over Effect */
+.game-over {
+    background-color: #e74c3c; /* Red background for game over */
 }

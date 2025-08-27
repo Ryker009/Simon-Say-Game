@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+    <div class="game-container">
+        <h1>Simon Says</h1>
+        <div class="info-panel">
+            <h2 id="high-score-display">High Score: 0</h2>
+            <p id="level-title">Press Any Key To Start</p>
+        </div>
+        <div class="simon-board">
+            <button class="simon-btn red" id="red"></button>
+            <button class="simon-btn green" id="green"></button>
+            <button class="simon-btn yellow" id="yellow"></button>
+            <button class="simon-btn blue" id="blue"></button>
+        </div>
+    </div>
+
+    <audio src="beep.wav" id="beep-sound"></audio>
+    <audio src="game-over.wav" id="game-over-sound"></audio>
+    <audio src="background-music.mp3" id="background-music" loop muted></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
