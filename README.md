@@ -6,9 +6,7 @@ A classic memory game of Simon Says built with vanilla JavaScript, HTML, and CSS
 
 ## ✨ Live Demo
 
-**Play the game here:** [https://your-username.github.io/Simon-Say-Game/](https://your-username.github.io/Simon-Say-Game/)
-
-*(**Note to you:** To create this live link, you can use [GitHub Pages](https://pages.github.com/). It's free and easy to set up for projects like this!)*
+**Play the game here:** [https://Ryker009.github.io/Simon-Say-Game/](https://Ryker009.github.io/Simon-Say-Game/)
 
 ---
 
@@ -39,7 +37,7 @@ To run this project on your local machine, follow these simple steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/Simon-Say-Game.git](https://github.com/your-username/Simon-Say-Game.git)
+    git clone [https://github.com/Ryker009/Simon-Say-Game.git](https://github.com/Ryker009/Simon-Say-Game.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
