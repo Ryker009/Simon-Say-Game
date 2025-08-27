@@ -45,8 +45,8 @@ To run this project on your local machine, follow these simple steps:
     ```bash
     cd Simon-Say-Game
     ```
-3.  **Open the `game.html` file in your browser:**
-    * Simply double-click the `game.html` file, or right-click and choose "Open with" your favorite browser.
+3.  **Open the `index.html` file in your browser:**
+    * Simply double-click the `index.html` file, or right-click and choose "Open with" your favorite browser.
 
 And that's it! The game is now running locally.
 
